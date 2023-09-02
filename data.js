@@ -195,7 +195,6 @@ const wrapperData = document.createElement("div");
 wrapperData.style.display = "flex";
 wrapperData.style.justifyContent = "space-between";
 wrapperData.style.width = "80vw";
-wrapperData.style.margin = "0 auto";
 
 silsilahKeluarga.data.forEach((item) => {
   const namaKeluarga = document.createElement("p");
