@@ -197,7 +197,8 @@ wrapperData.style.justifyContent = "space-between";
 wrapperData.style.width = "80vw";
 
 const dataFitur = document.createElement("div");
-dataFitur.textContent = "Profile";
+dataFitur.textContent =
+  "Profile, Sejarah, Data Silsilah, List berita dan Kegiatan";
 
 silsilahKeluarga.data.forEach((item) => {
   const namaKeluarga = document.createElement("p");
