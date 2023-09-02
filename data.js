@@ -196,6 +196,9 @@ wrapperData.style.display = "flex";
 wrapperData.style.justifyContent = "space-between";
 wrapperData.style.width = "80vw";
 
+const dataFitur = document.createElement("div");
+dataFitur.textContent = "Profile";
+
 silsilahKeluarga.data.forEach((item) => {
   const namaKeluarga = document.createElement("p");
   namaKeluarga.textContent = item.name;
@@ -206,4 +209,5 @@ silsilahKeluarga.data.forEach((item) => {
 
 console.log(silsilahKeluarga.data);
 root.append(Title);
+root.append(dataFitur);
 root.append(wrapperData);
