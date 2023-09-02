@@ -25,7 +25,17 @@ const silsilahKeluarga = {
             {
               name: "Pak Siama",
               anak: [
-                { name: "Sarwan" },
+                {
+                  name: "Sarwan",
+                  anak: [
+                    { name: "Bapak e Os" },
+                    { name: "Mak e Ha" },
+                    { name: "Hunin", anak: { name: "Zainal Abidin, S.Kom" } },
+                    { name: "Puyar" },
+                    { name: "Ndi" },
+                    { name: "Kasan" },
+                  ],
+                },
                 { name: "Hj.Samolan" },
                 { name: "Sunar" },
                 { name: "Sarwaton" },
