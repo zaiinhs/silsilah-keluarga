@@ -1,15 +1,20 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
-  content: [
-    "./app/**/*.{js,ts,jsx,tsx,mdx}",
-    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./components/**/*.{js,ts,jsx,tsx,mdx}",
+export default {
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
 
-    // Or if using `src` directory:
-    "./src/**/*.{js,ts,jsx,tsx,mdx}",
-  ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        darkGray: "hsl(0, 0%, 63%)",
+        veryDarkGray: "hsl(0, 0%, 27%)",
+      },
+      fontFamily: {
+        Spartan: ["Spartan", "sans-serif"],
+      },
+      screens: {
+        desktop: "1440px",
+      },
+    },
   },
-  plugins: [require("daisyui")],
+  plugins: [],
 };
